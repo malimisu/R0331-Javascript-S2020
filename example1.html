@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <!-- script tag is where Javascript goes to -->
+    <script>
+      for (var i = 0; i < 400; i++) {
+        console.log("This round is " + i);
+      }
+      alert("Hei vaan maailma");
+      alert("Ärsyttääkö pop-upit?");
+      alert("Saat vielä viimeisen");
+
+      var x = 33;
+      var order = "Beer";
+
+      if (x > 50) {
+        document.write("<strong>Middle aged man</strong>");
+        console.log("Middle aged man");
+      } else if (x <= 50 && x > 40) {
+        document.write("Middle aged man, who ordered some " + order);
+        console.log("Middle aged man, who ordered some " + order);
+      } else if (x <= 40 && x > 30) {
+        document.write("<italic>This man wants to drink</> " + order);
+        console.log("This man wants to drink" + order);
+      } else document.write("It seems you're bit underaged.");
+
+      var arr = [];
+      for (var i = 0; i < 15; i++) {
+        console.log(arr.push(Math.random() * 100));
+        document.write(arr.push(Math.random() * 100));
+      }
+      console.log(arr);
+
+      age = 20;
+      function areYouOldEnough(age) {
+        if (age < 18) {
+          return false;
+        } else return true;
+      }
+      console.log(areYouOldEnough(16));
+      document.write(areYouOldEnough(19));
+
+      alert(areYouOldEnough(5));
+      alert(areYouOldEnough(25));
+    </script>
+  </head>
+
+  <body>
+    <h1>Welcome to example page</h1>
+    <p>Lorem ipsum dolorem...</p>
+  </body>
+</html>
