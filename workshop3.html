@@ -161,6 +161,7 @@
       }
     }
     //annettu Google Maps osoite antaa virheen "The Google Maps Platform server rejected your request. Invalid request. Missing the 'size' parameter."
+    //Jostain syystä osoitteeseen tulee & lisäksi amp; väliin. Jos ne poistaa, tulee Google Mapsilta API -virhe.
     function locPosition(position) {
       var latlon = position.coords.latitude + "," + position.coords.longitude;
       var img_url =
@@ -184,7 +185,7 @@
   <!--TEHTÄVÄ 2, hiiren vieminen otsikon päälle ja pois tuottaa tekstin consoleen-->
   <h2
     onMouseOver="console.log('Stepped over me, mouse')"
-    onmouseout="console.log('Bye bye, mouse!')"
+    onmouseout="alert('Bye bye, mouse!')"
   >
     Exercise 2
   </h2>
